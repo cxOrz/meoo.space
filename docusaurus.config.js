@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: '喵屋',
   tagline: '每天进步一点点',
-  url: 'https://meoo.space',
+  url: 'https://meoo.space/',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -24,13 +24,14 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: 'https://github.com/miaochenxi/miaochenxi.github.io/tree/main/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/miaochenxi/miaochenxi.github.io/tree/main/',
+            postsPerPage: 5
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -43,7 +44,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       navbar: {
-        title: '喵屋',
+        title: 'Meoo',
         logo: {
           alt: 'Logo',
           src: 'img/logo.svg',
@@ -51,13 +52,17 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'intro',
+            docId: 'notes',
             position: 'left',
-            label: 'Tutorial',
+            label: '笔记',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            to: '/blog',
+            label: '博客',
+            position: 'left'
+          },
+          {
+            href: 'https://github.com/miaochenxi',
             label: 'GitHub',
             position: 'right',
           },
@@ -67,51 +72,49 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: '本站',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
-              },
-            ],
-          },
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: '笔记',
+                to: '/docs/notes',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
+                label: '博客',
                 to: '/blog',
               },
+            ],
+          },
+          {
+            title: '我的',
+            items: [
               {
-                label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                label: 'Github',
+                href: 'https://github.com/miaochenxi',
+              },
+              {
+                label: 'CSDN',
+                href: 'https://blog.csdn.net/u014418267',
               },
             ],
           },
+          {
+            title: '更多',
+            items: [
+              {
+                label: '...',
+                to: '/'
+              }
+            ]
+          }
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} mcx. Built with Docusaurus.`,
       },
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+        additionalLanguages: ['java'],
       },
+      hideableSidebar: true
     }),
 };
 
