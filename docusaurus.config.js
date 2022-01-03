@@ -27,6 +27,8 @@ const config = {
           editUrl: 'https://github.com/miaochenxi/miaochenxi.github.io/tree/main/',
         },
         blog: {
+          blogSidebarTitle:'全部博文',
+          blogSidebarCount:'ALL',
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
@@ -107,7 +109,7 @@ const config = {
             ]
           }
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} mcx. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} mcx.`,
       },
       prism: {
         theme: lightCodeTheme,
