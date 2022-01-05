@@ -23,17 +23,16 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
           editUrl: 'https://github.com/miaochenxi/miaochenxi.github.io/tree/main/',
         },
         blog: {
-          blogSidebarTitle:'全部博文',
-          blogSidebarCount:'ALL',
+          blogTitle: '博客',
+          blogSidebarTitle: '全部博文',
+          blogSidebarCount: 'ALL',
           showReadingTime: true,
-          // Please change this to your repo.
           editUrl:
             'https://github.com/miaochenxi/miaochenxi.github.io/tree/main/',
-            postsPerPage: 5
+          postsPerPage: 5
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -49,12 +48,11 @@ const config = {
         title: 'Meoo',
         logo: {
           alt: 'Logo',
-          src: 'img/logo.svg',
+          src: 'img/logo.png',
         },
         items: [
           {
-            type: 'doc',
-            docId: 'notes',
+            to:'docs/notes',
             position: 'left',
             label: '笔记',
           },
@@ -64,10 +62,33 @@ const config = {
             position: 'left'
           },
           {
-            href: 'https://github.com/miaochenxi',
-            label: 'GitHub',
-            position: 'right',
+            to: '/essay',
+            label: '记录生活',
+            position: 'left'
           },
+          {
+            to: '/docs/hackfun/fun',
+            label: '乐趣',
+            position: 'left'
+          },
+          {
+            href: 'https://github.com/miaochenxi',
+            position: 'right',
+            className: 'header-github-link',
+            'aria-label': 'GitHub',
+          },
+          {
+            href: 'https://steamcommunity.com/profiles/76561199021282196',
+            position: 'right',
+            className: 'header-steam-link',
+            'aria-label': 'Steam',
+          },
+          {
+            href: 'https://space.bilibili.com/18844857',
+            position: 'right',
+            className: 'header-bilibili-link',
+            'aria-label': 'Bilibili',
+          }
         ],
       },
       footer: {
@@ -116,8 +137,26 @@ const config = {
         darkTheme: darkCodeTheme,
         additionalLanguages: ['java'],
       },
-      hideableSidebar: true
+      hideableSidebar: true,
     }),
+  plugins: [
+    [
+      '@docusaurus/plugin-content-blog',
+      {
+        id: 'second-blog',
+        blogTitle: '记录生活',
+        /**
+         * 您网站上博客的 URL 路由。
+         * *请务必不要*添加斜杠。
+         */
+        routeBasePath: 'essay',
+        /**
+         * 相对于站点目录的文件系统数据路径。
+         */
+        path: './essay',
+      },
+    ]
+  ]
 };
 
 module.exports = config;
