@@ -14,7 +14,7 @@ const config = {
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'miaochenxi', // Usually your GitHub org/user name.
-  projectName: 'miaochenxi.github.io', // Usually your repo name.
+  projectName: 'meoo.space', // Usually your repo name.
 
   presets: [
     [
@@ -23,7 +23,7 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          editUrl: 'https://github.com/miaochenxi/miaochenxi.github.io/tree/main/',
+          editUrl: 'https://github.com/miaochenxi/meoo.space/tree/main/',
         },
         blog: {
           blogTitle: '博客',
@@ -31,7 +31,7 @@ const config = {
           blogSidebarCount: 'ALL',
           showReadingTime: true,
           editUrl:
-            'https://github.com/miaochenxi/miaochenxi.github.io/tree/main/',
+            'https://github.com/miaochenxi/meoo.space/tree/main/',
           postsPerPage: 5
         },
         theme: {
