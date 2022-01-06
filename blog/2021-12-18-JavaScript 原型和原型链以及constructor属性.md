@@ -5,7 +5,7 @@ authors: mcx
 tags: [Javascript, 笔记]
 ---
 
-### Prototype 原型对象
+## Prototype 原型对象
 Prototype 翻译过来叫“原型”，原型是一种在开发生命周期的早期显示应用程序或产品的外观和行为的模型。Javascript 中的 **prototype** 叫原型对象，**是每一个函数都有的属性**。
 
 <!--truncate-->
@@ -32,7 +32,7 @@ function A(){} // 定义一个函数 A
 ```
 在 Javascript 中函数也是对象，可以自行验证 `A instanceof Object` 或者 `Array instanceof Object` 或者 `String instanceof Object` 得到的结果都是 `true`。直观地看一下，打印 `typeof A.prototype`，获得以下结果。可见 `A.prototype` 这个 prototype 就是个对象。
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/8d8a2c62bd3f43ff937258266e0c381f.png)
-### 原型链
+## 原型链
 函数：存在 prototype 属性，其中 prototype 属性里又有一个 constructor 属性。constructor 指向该函数本身。
 对象：存在 \_\_proto\_\_ 属性，它指向它的构造函数的 prototype 。（一个函数，用它 new 出了对象，这个函数就叫构造函数）
 
@@ -59,7 +59,7 @@ a 是函数 A 构造出来的对象， a.__proto\_\_ 指向它的构造函数的
 
 `[[Prototype]]` 只是在控制台里这样显示，实际上**它是就是 `__proto__`**。可以得知，A.prototype.__proto\_\_ 指向了 Object.prototype，也就是 a.__proto\_\_.__proto\_\_ 指向 Object.prototype。一个原型对象指向上层的一个原型对象，上层的原型对象一个又指向上上层的一直指到最后为 null 的链，就是原型链。
 
-### constructor 属性
+## constructor 属性
 constructor 是 prototype 的属性，constructor 指向构造函数本身。
 ```javascript
 A.prototype.constructor === A // true

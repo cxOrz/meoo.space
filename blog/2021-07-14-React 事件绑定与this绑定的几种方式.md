@@ -5,7 +5,7 @@ authors: mcx
 tags: [React, 大二]
 ---
 
-### MDN中 Function.prototype.bind()
+## MDN中 Function.prototype.bind()
 bind() 方法创建一个新的函数，在 bind() 被调用时，这个新函数的 this 被指定为 bind() 的第一个参数，而其余参数将作为新函数的参数，供调用时使用。
 
 先引入一个例子：
@@ -36,7 +36,7 @@ console.log(unboundGetX());
 
 在这个例子告诉我们，绑定this的重要性，接下来看看常见的绑定this的方式，以免绑定事件报错 undefined。
 
-### 为事件方法绑定this的四种常见方式
+## 为事件方法绑定this的四种常见方式
 ①【推荐】在constructor中绑定：
 
 ```javascript

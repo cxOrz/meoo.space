@@ -11,7 +11,7 @@ VSCode使用Vue时ESLint无法使用，参考以下步骤。
 
 <!--truncate-->
 
-### 错误信息
+## 错误信息
 
 ```bash
 [Info  - 下午5:50:02] ESLint server is starting
@@ -45,6 +45,6 @@ Consider running eslint --debug C:\Users\MCX\Documents\Vue\vueproj\src\component
 
 现在再看看代码是不是有错误提示了？重启VSCode呢？还没有就去Google一下吧。
 
-### Tips
+## Tips
 
 如果使用了vetur插件，想使用ESLint插件的提示而不是vetur自带的 (其实就是上述步骤的目的) ，别忘了在setting中添加`"vetur.validation.template": false`，这样就不使用vetur自带的eslint了。
