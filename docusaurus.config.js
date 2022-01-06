@@ -67,7 +67,7 @@ const config = {
             position: 'left'
           },
           {
-            to: '/docs/hackfun/fun',
+            to: '/docs/hackfun/terrariahouses',
             label: '乐趣',
             position: 'left'
           },
