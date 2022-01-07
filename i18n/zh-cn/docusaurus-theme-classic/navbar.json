@@ -1,0 +1,22 @@
+{
+  "title": {
+    "message": "Meoo",
+    "description": "The title in the navbar"
+  },
+  "item.label.笔记": {
+    "message": "笔记",
+    "description": "Navbar item with label 笔记"
+  },
+  "item.label.博客": {
+    "message": "博客",
+    "description": "Navbar item with label 博客"
+  },
+  "item.label.记录生活": {
+    "message": "记录生活",
+    "description": "Navbar item with label 记录生活"
+  },
+  "item.label.乐趣": {
+    "message": "乐趣",
+    "description": "Navbar item with label 乐趣"
+  }
+}

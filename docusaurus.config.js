@@ -10,6 +10,7 @@ const config = {
   tagline: '每天进步一点点',
   url: 'https://meoo.space/',
   baseUrl: '/',
+  trailingSlash: false,
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
@@ -45,7 +46,6 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       metadata: [
-        { name: 'baidu-site-verification', content: 'code-TRnOFZ7saV' }
       ],
       navbar: {
         title: 'Meoo',
@@ -147,6 +147,7 @@ const config = {
       '@docusaurus/plugin-content-blog',
       {
         id: 'second-blog',
+        blogSidebarTitle:'近期博文',
         blogTitle: '记录生活',
         /**
          * 您网站上博客的 URL 路由。
@@ -158,8 +159,18 @@ const config = {
          */
         path: './essay',
       },
-    ]
-  ]
+    ],
+    [
+      '@docusaurus/plugin-sitemap',
+      {
+        changefreq: 'weekly',
+        priority: 0.5,
+      },]
+  ],
+  i18n: {
+    defaultLocale: 'zh-cn',
+    locales: ['zh-cn', 'en'],
+  },
 };
 
 module.exports = config;

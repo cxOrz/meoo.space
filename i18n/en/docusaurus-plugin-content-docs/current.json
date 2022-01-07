@@ -1,0 +1,14 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.notes.category.Javascript": {
+    "message": "Javascript",
+    "description": "The label for category Javascript in sidebar notes"
+  },
+  "sidebar.hackfun.category.乐趣": {
+    "message": "乐趣",
+    "description": "The label for category 乐趣 in sidebar hackfun"
+  }
+}

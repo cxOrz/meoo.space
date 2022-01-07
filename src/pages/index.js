@@ -1,27 +1,25 @@
 import React from 'react';
-import clsx from 'clsx';
 import Layout from '@theme/Layout';
-import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 import HomepageFeatures from '../components/HomepageFeatures';
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className="container">
-        <h1 className="hero__title">{siteConfig.title}</h1>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className="button button--secondary button--lg"
-            to="/blog">
-            点我传送至博客 🚀
-          </Link>
-        </div>
+    <div className="hero">
+      <div className={styles.welcome_intro}>
+        <h1 className={styles.hero_title}>
+          <span
+            style={{ color: 'var(--ifm-color-primary)' }}
+          >Meoo</span> ~ 欢迎来到小屋</h1>
+        <p className="hero__subtitle">记录学习、留住生活，尝试坚持写一点东西，让每天过的慢一点。</p>
       </div>
-    </header>
+      <div className={styles.welcome_svg}>
+        <img src={useBaseUrl("/img/program.svg")} />
+      </div>
+    </div>
   );
 }
 
@@ -32,7 +30,8 @@ export default function Home() {
       description="记录学习和生活，每天进步一点点">
       <HomepageHeader />
       <main>
-        <HomepageFeatures />
+        <br />
+        {/* <HomepageFeatures /> */}
       </main>
     </Layout>
   );
