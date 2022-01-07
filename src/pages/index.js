@@ -7,7 +7,7 @@ import styles from './index.module.css';
 import HomepageFeatures from '../components/HomepageFeatures';
 
 function HomepageHeader() {
-  const {siteConfig} = useDocusaurusContext();
+  const { siteConfig } = useDocusaurusContext();
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
@@ -30,6 +30,9 @@ export default function Home() {
     <Layout
       title={`Hello`}
       description="记录学习和生活，每天进步一点点">
+      <Head>
+        <meta name="baidu-site-verification" content="code-TRnOFZ7saV" />
+      </Head>
       <HomepageHeader />
       <main>
         <HomepageFeatures />
