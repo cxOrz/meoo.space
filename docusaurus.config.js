@@ -44,6 +44,9 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      metadata: [
+        { name: 'baidu-site-verification', content: 'code-TRnOFZ7saV' }
+      ],
       navbar: {
         title: 'Meoo',
         logo: {
@@ -52,7 +55,7 @@ const config = {
         },
         items: [
           {
-            to:'docs/notes',
+            to: 'docs/notes',
             position: 'left',
             label: '笔记',
           },

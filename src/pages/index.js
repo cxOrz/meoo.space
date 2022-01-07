@@ -5,7 +5,6 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
 import HomepageFeatures from '../components/HomepageFeatures';
-import Head from '@docusaurus/Head'
 
 function HomepageHeader() {
   const { siteConfig } = useDocusaurusContext();
@@ -31,9 +30,6 @@ export default function Home() {
     <Layout
       title={`Hello`}
       description="记录学习和生活，每天进步一点点">
-      <Head>
-        <meta name="baidu-site-verification" content="code-TRnOFZ7saV" />
-      </Head>
       <HomepageHeader />
       <main>
         <HomepageFeatures />
