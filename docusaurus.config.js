@@ -55,7 +55,7 @@ const config = {
         title: 'Meoo',
         logo: {
           alt: 'Logo',
-          src: 'img/logo.png',
+          src: 'img/logo.webp',
         },
         items: [
           {
