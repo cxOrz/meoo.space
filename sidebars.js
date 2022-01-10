@@ -30,9 +30,10 @@ const sidebars = {
       collapsed: false
     },
     {
-      label:'Openwrt',
-      type:'category',
-      items:['hackfun/openwrt/installation']
+      label: 'Openwrt',
+      type: 'category',
+      items: ['hackfun/openwrt/installation'],
+      collapsed: false
     },
     {
       label: 'Terraria',
