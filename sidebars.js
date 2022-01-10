@@ -30,6 +30,11 @@ const sidebars = {
       collapsed: false
     },
     {
+      label:'Openwrt',
+      type:'category',
+      items:['hackfun/openwrt/installation']
+    },
+    {
       label: 'Terraria',
       type: 'category',
       items: ['hackfun/terraria/terrariahouses'],
