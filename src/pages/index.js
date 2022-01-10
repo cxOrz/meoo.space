@@ -3,6 +3,7 @@ import Layout from '@theme/Layout';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import Head from '@docusaurus/Head';
 import HomepageFeatures from '../components/HomepageFeatures';
 
 function HomepageHeader() {
@@ -26,8 +27,10 @@ function HomepageHeader() {
 export default function Home() {
   return (
     <Layout
-      title={`Hello`}
-      description="记录学习和生活，每天进步一点点">
+      description="记录学习、留住生活，尝试坚持写一点东西，让每天过的慢一点。">
+        <Head>
+          <title>喵屋 - 欢迎来到小屋</title>
+        </Head>
       <HomepageHeader />
       <main>
         <br />
