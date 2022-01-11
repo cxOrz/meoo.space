@@ -112,6 +112,14 @@ const config = {
                 label: '博客',
                 to: '/blog',
               },
+              {
+                label: '乐趣',
+                to: '/docs/hackfun',
+              },
+              {
+                label: '记录生活',
+                to: '/essay',
+              },
             ],
           },
           {

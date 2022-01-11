@@ -72,6 +72,12 @@ html[data-theme='dark'] .header-bilibili-link:before {
     no-repeat;
 }
 
+html[data-theme='dark'] article header h1,
+html[data-theme='dark'] article .markdown h2,
+html[data-theme='dark'] article .markdown h3 {
+  color: #f1f1f1;
+}
+
 /* 重写博客标题样式 */
 article header h2 {
   font-size: 2rem !important;
