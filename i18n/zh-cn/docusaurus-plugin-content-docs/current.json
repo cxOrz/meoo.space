@@ -10,5 +10,25 @@
   "sidebar.hackfun.category.乐趣": {
     "message": "乐趣",
     "description": "The label for category 乐趣 in sidebar hackfun"
+  },
+  "sidebar.笔记.category.Javascript": {
+    "message": "Javascript",
+    "description": "The label for category Javascript in sidebar 笔记"
+  },
+  "sidebar.笔记.category.资源": {
+    "message": "资源",
+    "description": "The label for category 资源 in sidebar 笔记"
+  },
+  "sidebar.乐趣.category.Manjaro": {
+    "message": "Manjaro",
+    "description": "The label for category Manjaro in sidebar 乐趣"
+  },
+  "sidebar.乐趣.category.Openwrt": {
+    "message": "Openwrt",
+    "description": "The label for category Openwrt in sidebar 乐趣"
+  },
+  "sidebar.乐趣.category.Terraria": {
+    "message": "Terraria",
+    "description": "The label for category Terraria in sidebar 乐趣"
   }
 }
