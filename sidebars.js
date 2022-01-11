@@ -32,7 +32,11 @@ const sidebars = {
     {
       label: 'Openwrt',
       type: 'category',
-      items: ['hackfun/openwrt/installation'],
+      items: [
+        'hackfun/openwrt/installation',
+        'hackfun/openwrt/turboacc',
+        'hackfun/openwrt/thirdparty'
+      ],
       collapsed: false
     },
     {
