@@ -1,7 +1,6 @@
 ---
 sidebar_position: 1
+title: Test
 ---
-
-# 什么是快乐信球
 
 阿巴阿巴
