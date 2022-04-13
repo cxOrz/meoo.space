@@ -15,6 +15,11 @@ const sidebars = {
       items: ['notes/Javascript/what'],
     },
     {
+      label: '安全渗透',
+      type: 'category',
+      items: ['notes/whitehat/arpspoof']
+    },
+    {
       label: '资源',
       type: 'category',
       items: ['notes/resources/website'],
