@@ -24,6 +24,7 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
+          showLastUpdateAuthor: true,
           editUrl: 'https://github.com/miaochenxi/meoo.space/tree/main/',
         },
         blog: {
@@ -38,7 +39,7 @@ const config = {
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
-        sitemap:{
+        sitemap: {
           changefreq: 'weekly',
           priority: 0.5,
         }
@@ -159,7 +160,7 @@ const config = {
       '@docusaurus/plugin-content-blog',
       {
         id: 'second-blog',
-        blogSidebarTitle:'近期博文',
+        blogSidebarTitle: '近期博文',
         blogTitle: '记录生活',
         /**
          * 您网站上博客的 URL 路由。

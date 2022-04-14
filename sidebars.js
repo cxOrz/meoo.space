@@ -15,9 +15,9 @@ const sidebars = {
       items: ['notes/Javascript/what'],
     },
     {
-      label: '安全渗透',
+      label: '网络安全',
       type: 'category',
-      items: ['notes/whitehat/arpspoof']
+      items: ['notes/whitehat/arpspoof','notes/whitehat/mdk4']
     },
     {
       label: '资源',
@@ -31,7 +31,7 @@ const sidebars = {
     {
       label: 'Manjaro',
       type: 'category',
-      items: ['hackfun/manjaro/grub', 'hackfun/manjaro/timesetting'],
+      items: ['hackfun/manjaro/grub', 'hackfun/manjaro/timesetting','hackfun/manjaro/rtl8812bu'],
       collapsed: false
     },
     {
