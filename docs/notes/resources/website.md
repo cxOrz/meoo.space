@@ -4,8 +4,6 @@ id: website
 title: 工具网站列表
 ---
 
-# 优质的工具网站
-
 ## [Quick Reference](https://quickref.me/)
 提供了极其丰富的各类语言、工具的速查以及示例。
 

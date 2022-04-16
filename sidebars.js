@@ -12,7 +12,7 @@ const sidebars = {
     {
       label: 'Javascript',
       type: 'category',
-      items: ['notes/Javascript/what'],
+      items: ['notes/Javascript/call-apply-bind'],
     },
     {
       label: '网络安全',
