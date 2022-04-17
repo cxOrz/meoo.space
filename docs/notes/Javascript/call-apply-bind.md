@@ -6,9 +6,7 @@ title: 函数 call, apply, bind 的异同
 > 每一个函数都有这三个方法，平时也不怎么能用到，整的时间长不看真容易迷糊...
 
 ```javascript
-function Fn(){
-  
-}
+function Fn(){}
 ```
 
 函数 Fn，可调用 `Fn.call()`, `Fn.apply()`, `Fn.bind()`，下面细说。
