@@ -14,7 +14,7 @@ const config = {
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'miaochenxi', // Usually your GitHub org/user name.
+  organizationName: 'cxOrz', // Usually your GitHub org/user name.
   projectName: 'meoo.space', // Usually your repo name.
 
   presets: [
@@ -25,7 +25,7 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           showLastUpdateAuthor: true,
-          editUrl: 'https://github.com/miaochenxi/meoo.space/tree/main/',
+          editUrl: 'https://github.com/cxOrz/meoo.space/tree/main/',
         },
         blog: {
           blogTitle: '博客',
@@ -33,7 +33,7 @@ const config = {
           blogSidebarCount: 'ALL',
           showReadingTime: true,
           editUrl:
-            'https://github.com/miaochenxi/meoo.space/tree/main/',
+            'https://github.com/cxOrz/meoo.space/tree/main/',
           postsPerPage: 5
         },
         theme: {
@@ -80,7 +80,7 @@ const config = {
             position: 'left'
           },
           {
-            href: 'https://github.com/miaochenxi',
+            href: 'https://github.com/cxOrz',
             position: 'right',
             className: 'header-github-link',
             'aria-label': 'GitHub',
@@ -128,7 +128,7 @@ const config = {
             items: [
               {
                 label: 'Github',
-                href: 'https://github.com/miaochenxi',
+                href: 'https://github.com/cxOrz',
               },
               {
                 label: 'CSDN',
