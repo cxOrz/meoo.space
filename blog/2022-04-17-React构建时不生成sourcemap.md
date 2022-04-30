@@ -15,7 +15,7 @@ tags: [前端, React]
 ```javascript
 GENERATE_SOURCEMAP = false
 ```
-
+<!--truncate-->
 ## 更多
 
 列几个常用的，见下表

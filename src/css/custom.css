@@ -15,6 +15,7 @@
   --ifm-color-primary-lightest: #23d8d9;
   --ifm-code-font-size: 95%;
   --ifm-font-family-monospace: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  --ifm-container-width-xl: 1520px;
 }
 
 .docusaurus-highlight-code-line {
