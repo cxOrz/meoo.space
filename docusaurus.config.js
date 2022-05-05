@@ -153,7 +153,11 @@ const config = {
         darkTheme: darkCodeTheme,
         additionalLanguages: ['java'],
       },
-      hideableSidebar: true,
+      docs:{
+        sidebar:{
+          hideable: true
+        }
+      }
     }),
   plugins: [
     [
