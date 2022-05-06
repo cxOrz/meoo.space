@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 title: Arp 攻击
+slug: /arpspoof
 ---
 
 > 本篇内容仅用于学习和测试，本人遵纪守法。

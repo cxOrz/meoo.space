@@ -1,5 +1,6 @@
 ---
 title: R4A Gigabit 刷入 Openwrt
+slug: /openwrt-installation
 ---
 
 小米路由器4A千兆版 是一款基于联发科 MT7621 SoC 的室内无线路由器，具有三个以太网端口（2xLAN + 1xWAN）、双频 802.11bgn + AC 无线 WiFi，有两种版本 China/Global 固件。

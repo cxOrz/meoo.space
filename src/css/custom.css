@@ -16,6 +16,12 @@
   --ifm-code-font-size: 95%;
   --ifm-font-family-monospace: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
   --ifm-container-width-xl: 1520px;
+  --docusaurus-highlighted-code-line-bg: rgb(235, 235, 235);
+}
+
+[data-theme='dark'] {
+  /* Color which works with dark mode syntax highlighting theme */
+  --docusaurus-highlighted-code-line-bg: rgb(49, 43, 58);
 }
 
 .docusaurus-highlight-code-line {

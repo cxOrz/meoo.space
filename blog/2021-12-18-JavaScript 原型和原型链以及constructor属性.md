@@ -31,6 +31,7 @@ find: ƒ find()
 function A(){} // 定义一个函数 A
 ```
 在 Javascript 中函数也是对象，可以自行验证 `A instanceof Object` 或者 `Array instanceof Object` 或者 `String instanceof Object` 得到的结果都是 `true`。直观地看一下，打印 `typeof A.prototype`，获得以下结果。可见 `A.prototype` 这个 prototype 就是个对象。
+
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/8d8a2c62bd3f43ff937258266e0c381f.png)
 ## 原型链
 函数：存在 prototype 属性，其中 prototype 属性里又有一个 constructor 属性。constructor 指向该函数本身。

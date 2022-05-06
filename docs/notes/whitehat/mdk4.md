@@ -1,6 +1,7 @@
 ---
 sidebar_position: 2
 title: Mdk4 无线攻击
+slug: /mdk4-attack
 ---
 
 > 本篇内容仅用于学习和测试，本人遵纪守法。

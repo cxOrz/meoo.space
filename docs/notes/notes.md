@@ -2,6 +2,7 @@
 sidebar_position: 1
 id: notes-intro
 title: 介绍
+slug: /notes-intro
 ---
 
 笔记主要是给自己看的，或许会比较潦草。或许你会问既然给自己看的为什么要放上来，因为自己看也要有仪式感 😎。

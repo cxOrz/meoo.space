@@ -1,6 +1,7 @@
 ---
 sidebar_position: 3
 title: RTL8812BU驱动安装
+slug: /manjaro-rtl8812bu
 ---
 
 已经有人做出了安装包放在了AUR仓库，他用到了但是却没有把 linux-headers 写在 PKGBUILD 里面，导致安装失败。使用需要先手动安装这个这个依赖，再安装驱动才能成功。

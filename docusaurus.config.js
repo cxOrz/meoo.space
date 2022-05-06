@@ -60,7 +60,7 @@ const config = {
         },
         items: [
           {
-            to: 'docs/notes',
+            to: 'docs/notes-intro',
             position: 'left',
             label: '笔记',
           },
@@ -75,7 +75,7 @@ const config = {
             position: 'left'
           },
           {
-            to: '/docs/hackfun',
+            to: '/docs/hackfun-intro',
             label: '乐趣',
             position: 'left'
           },
@@ -107,7 +107,7 @@ const config = {
             items: [
               {
                 label: '笔记',
-                to: '/docs/notes',
+                to: '/docs/notes-intro',
               },
               {
                 label: '博客',
@@ -115,7 +115,7 @@ const config = {
               },
               {
                 label: '乐趣',
-                to: '/docs/hackfun',
+                to: '/docs/hackfun-intro',
               },
               {
                 label: '记录生活',
@@ -149,9 +149,8 @@ const config = {
         copyright: `Copyright © ${new Date().getFullYear()} mcx.`,
       },
       prism: {
-        theme: lightCodeTheme,
-        darkTheme: darkCodeTheme,
-        additionalLanguages: ['java'],
+        theme: require('prism-react-renderer/themes/github'),
+        darkTheme: require('prism-react-renderer/themes/duotoneDark')
       },
       docs:{
         sidebar:{

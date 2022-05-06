@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 title: 函数 call, apply, bind 的异同
+slug: /js-call-bind-apply
 ---
 
 > 每一个函数都有这三个方法，平时也不怎么能用到，整的时间长不看真容易迷糊...

@@ -1,5 +1,6 @@
 ---
 title: 第三方软件源 & opkg
+slug: /openwrt-thirdparty
 ---
 
 可直接访问手动下载的软件库： https://op.supes.top

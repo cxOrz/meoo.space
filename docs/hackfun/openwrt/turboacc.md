@@ -1,5 +1,6 @@
 ---
 title: Turbo ACC 网络加速模块
+slug: /openwrt-turboacc
 ---
 
 Turbo ACC 模块本身是一个插件合集，使用它能够对网络进行优化和加速。

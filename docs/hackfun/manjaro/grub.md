@@ -1,6 +1,7 @@
 ---
 sidebar_position: 1
 title: GRUB 引导
+slug: /manjaro-grub
 ---
 
 最常见的问题，就是 Windows 更新之后，引导被覆盖了，开机直接进入 Windows ，这时需要重新安装 GRUB ，而不是更新引导项。其次，就是在安装其他基于 Linux 的系统时，需要添加引导项，例如通过 [Brunch Framework](https://github.com/sebanc/brunch) 安装 Chrome OS 时，可能需要禁用独显或是添加一些其他的内核参数，这时也需要更新 GRUB 配置使之生效。

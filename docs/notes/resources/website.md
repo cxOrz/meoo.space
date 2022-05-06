@@ -2,6 +2,7 @@
 sidebar_position: 1
 id: website
 title: 工具网站列表
+slug: /resources-webtool
 ---
 
 ## [Quick Reference](https://quickref.me/)

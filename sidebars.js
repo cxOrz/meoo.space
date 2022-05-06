@@ -27,7 +27,7 @@ const sidebars = {
     }
   ],
   乐趣: [
-    'hackfun/hackfun',
+    'hackfun/hackfun-intro',
     {
       label: 'Manjaro',
       type: 'category',
@@ -41,6 +41,14 @@ const sidebars = {
         'hackfun/openwrt/installation',
         'hackfun/openwrt/turboacc',
         'hackfun/openwrt/thirdparty'
+      ],
+      collapsed: false
+    },
+    {
+      label:'科学上网',
+      type: 'category',
+      items:[
+        'hackfun/net/v2ray-in-campus'
       ],
       collapsed: false
     },
