@@ -1,5 +1,6 @@
 ---
 title: 通过 v2ray 优雅使用校园网
+slug: /v2ray-in-campus
 ---
 
 :::caution 注意
