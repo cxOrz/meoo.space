@@ -1,5 +1,5 @@
 ﻿---
-slug: 20211122
+slug: reactrouter-auth-route
 title: react-router v6 路由拦截/路由鉴权
 authors: mcx
 tags: [React, 笔记]

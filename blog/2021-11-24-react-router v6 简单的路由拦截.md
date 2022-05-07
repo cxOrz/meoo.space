@@ -1,5 +1,5 @@
 ﻿---
-slug: 20211124
+slug: reactrouter-protected-route
 title: react-router v6 简单路由拦截跳转到登录
 authors: mcx
 tags: [React, 笔记]

@@ -1,5 +1,5 @@
 ﻿---
-slug: 20200206
+slug: swing-grade-manage
 title: JavaSwing个人成绩管理系统
 authors: mcx
 tags: [Java, 大一]

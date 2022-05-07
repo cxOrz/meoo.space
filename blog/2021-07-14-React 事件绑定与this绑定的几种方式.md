@@ -1,5 +1,5 @@
 ﻿---
-slug: 20210714
+slug: react-eventbind
 title: React 事件绑定/this绑定的几种方式
 authors: mcx
 tags: [React, 大二]

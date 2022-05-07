@@ -1,5 +1,5 @@
 ﻿---
-slug: 20210910
+slug: js-linkedlist
 title: Javascript 双链表实现
 authors: mcx
 tags: [Javascript, 大三]

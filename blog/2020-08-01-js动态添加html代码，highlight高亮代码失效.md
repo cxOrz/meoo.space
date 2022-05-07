@@ -1,5 +1,5 @@
 ﻿---
-slug: 20200801
+slug: highlightjs-notwork
 title: highlight.js 高亮代码失效
 authors: mcx
 tags: [Javascript, 大一]

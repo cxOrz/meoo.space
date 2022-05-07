@@ -1,5 +1,5 @@
 ﻿---
-slug: 20211119
+slug: reactrouter-flickering
 title: react-router v6 路由跳转时页面闪烁
 authors: mcx
 tags: [React, 笔记]

@@ -1,5 +1,5 @@
 ﻿---
-slug: 20211218
+slug: js-constructor-prototype
 title: JavaScript 原型和原型链以及constructor属性
 authors: mcx
 tags: [Javascript, 笔记]

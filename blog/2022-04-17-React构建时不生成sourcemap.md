@@ -1,5 +1,5 @@
 ---
-slug: 20220417
+slug: react-no-sourcemap
 title: React构建时不生成sourcemap
 authors: mcx
 tags: [前端, React]

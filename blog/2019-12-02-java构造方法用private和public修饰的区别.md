@@ -1,5 +1,5 @@
 ﻿---
-slug: 20191202
+slug: java-constructor
 title: java构造方法用private和public修饰的区别
 authors: mcx
 tags: [Java, 笔记, 大一]

@@ -1,5 +1,5 @@
 ﻿---
-slug: 20200814
+slug: metainf-collided
 title: Entry name ‘META-INF_xxxxxxxx‘ collided 解决方法
 authors: mcx
 tags: [Android, 大一]

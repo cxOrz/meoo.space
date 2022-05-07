@@ -1,5 +1,5 @@
 ﻿---
-slug: 20200203
+slug: jtable-edit-cell
 title: JavaSwing修改JTable单元格数据
 authors: mcx
 tags: [Java, 大一]

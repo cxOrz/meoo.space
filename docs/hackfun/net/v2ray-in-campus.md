@@ -92,6 +92,7 @@ proxies:
     alterId: 0
     cipher: auto
     tls: false
+    udp: true
   #...
   #可以根据服务端配置更多节点，注意缩进
 proxy-groups: []

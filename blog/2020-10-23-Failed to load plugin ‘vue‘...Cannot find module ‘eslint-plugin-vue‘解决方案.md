@@ -1,5 +1,5 @@
 ﻿---
-slug: 20201023
+slug: eslint-plugin-vue-failed
 title: Failed to load plugin ‘vue‘...Cannot find module ‘eslint-plugin-vue‘解决方案
 authors: mcx
 tags: [Vue, 笔记, 大二]

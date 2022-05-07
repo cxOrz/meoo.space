@@ -1,5 +1,5 @@
 ﻿---
-slug: 20200612
+slug: swing-mysql-domitorymanage
 title: JavaSwing+MySQL+校园宿舍管理系统
 authors: mcx
 tags: [Java, 大一]

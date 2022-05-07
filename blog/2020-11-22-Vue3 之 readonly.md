@@ -1,5 +1,5 @@
 ﻿---
-slug: 20201122
+slug: vue3-readonly
 title: Vue3 之 readonly
 authors: mcx
 tags: [Vue, 笔记, 大二]

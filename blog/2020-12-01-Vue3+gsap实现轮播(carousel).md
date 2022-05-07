@@ -1,5 +1,5 @@
 ﻿---
-slug: 20201201
+slug: vue3-gsap-carousel
 title: Vue3+gsap 实现轮播组件
 authors: mcx
 tags: [Vue, 笔记, 大二]
