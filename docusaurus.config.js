@@ -10,7 +10,6 @@ const config = {
   tagline: '每天进步一点点',
   url: 'https://meoo.space/',
   baseUrl: '/',
-  trailingSlash: false,
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
