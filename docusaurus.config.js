@@ -149,7 +149,7 @@ const config = {
       },
       prism: {
         theme: require('prism-react-renderer/themes/github'),
-        darkTheme: require('prism-react-renderer/themes/duotoneDark')
+        darkTheme: require('prism-react-renderer/themes/vsDark')
       },
       docs:{
         sidebar:{

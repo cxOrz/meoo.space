@@ -10,14 +10,19 @@ const sidebars = {
   笔记: [
     'notes/notes-intro',
     {
-      label: 'Javascript',
+      label: 'TypeScript',
+      type: 'category',
+      items: ['notes/TypeScript/ts-for-js-devs']    
+    },
+    {
+      label: 'JavaScript',
       type: 'category',
       items: ['notes/Javascript/call-apply-bind'],
     },
     {
       label: '网络安全',
       type: 'category',
-      items: ['notes/whitehat/arpspoof','notes/whitehat/mdk4']
+      items: ['notes/whitehat/arpspoof', 'notes/whitehat/mdk4']
     },
     {
       label: '资源',
@@ -31,7 +36,7 @@ const sidebars = {
     {
       label: 'Manjaro',
       type: 'category',
-      items: ['hackfun/manjaro/grub', 'hackfun/manjaro/timesetting','hackfun/manjaro/rtl8812bu'],
+      items: ['hackfun/manjaro/grub', 'hackfun/manjaro/timesetting', 'hackfun/manjaro/rtl8812bu'],
       collapsed: false
     },
     {
@@ -45,9 +50,9 @@ const sidebars = {
       collapsed: false
     },
     {
-      label:'科学上网',
+      label: '科学上网',
       type: 'category',
-      items:[
+      items: [
         'hackfun/net/v2ray-in-campus'
       ],
       collapsed: false
