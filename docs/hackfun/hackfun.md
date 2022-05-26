@@ -8,6 +8,6 @@ slug: /hackfun-intro
 
 | 标题 | 内容 |
 |-|-|
-| Manjaro | 一个基于 ArchLinux 的发行版 |
+| ArchLinux | 一个被戏称为邪教的 Linux 发行版 |
 | Openwrt | 一个嵌入式的 Linux 发行版 |
 | Terraria | 泰拉瑞亚是冒险之地！是神秘之地！ |

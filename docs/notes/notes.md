@@ -9,6 +9,7 @@ slug: /notes-intro
 
 | 标题 | 内容 |
 |-|-|
-| Javascript | 学习的知识点、问题 |
+| TypeScript | 整理ts笔记 |
+| JavaScript | 整理js笔记 |
 | 网络安全 | 网络攻击方面的知识 |
 | 资源 | 记录一些好用的工具、网站、程序 |

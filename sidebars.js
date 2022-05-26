@@ -34,9 +34,9 @@ const sidebars = {
   乐趣: [
     'hackfun/hackfun-intro',
     {
-      label: 'Manjaro',
+      label: 'ArchLinux',
       type: 'category',
-      items: ['hackfun/manjaro/grub', 'hackfun/manjaro/timesetting', 'hackfun/manjaro/rtl8812bu'],
+      items: ['hackfun/arch/grub', 'hackfun/arch/timesetting', 'hackfun/arch/rtl8812bu', 'hackfun/arch/fancontrol'],
       collapsed: false
     },
     {
