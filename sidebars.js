@@ -12,17 +12,20 @@ const sidebars = {
     {
       label: 'TypeScript',
       type: 'category',
-      items: ['notes/TypeScript/ts-for-js-devs']    
+      items: ['notes/TypeScript/ts-for-js-devs'],
+      collapsed: false
     },
     {
       label: 'JavaScript',
       type: 'category',
       items: ['notes/Javascript/call-apply-bind'],
+      collapsed: false
     },
     {
       label: '网络安全',
       type: 'category',
-      items: ['notes/whitehat/arpspoof', 'notes/whitehat/mdk4']
+      items: ['notes/whitehat/arpspoof', 'notes/whitehat/mdk4'],
+      collapsed: false
     },
     {
       label: '资源',
@@ -36,7 +39,13 @@ const sidebars = {
     {
       label: 'ArchLinux',
       type: 'category',
-      items: ['hackfun/arch/grub', 'hackfun/arch/timesetting', 'hackfun/arch/rtl8812bu', 'hackfun/arch/fancontrol'],
+      items: [
+        'hackfun/arch/grub',
+        'hackfun/arch/timesetting',
+        'hackfun/arch/rtl8812bu',
+        'hackfun/arch/fancontrol',
+        'hackfun/arch/bluetooth'
+      ],
       collapsed: false
     },
     {
