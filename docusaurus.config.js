@@ -145,7 +145,7 @@ const config = {
             ]
           }
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} mcx.`,
+        copyright: `版权所有 © 2022 cxOrz，此网站使用 Docusaurus 构建。`,
       },
       prism: {
         theme: require('prism-react-renderer/themes/github'),
@@ -164,14 +164,7 @@ const config = {
         id: 'second-blog',
         blogSidebarTitle: '近期博文',
         blogTitle: '记录生活',
-        /**
-         * 您网站上博客的 URL 路由。
-         * *请务必不要*添加斜杠。
-         */
         routeBasePath: 'essay',
-        /**
-         * 相对于站点目录的文件系统数据路径。
-         */
         path: './essay',
       },
     ]
