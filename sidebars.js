@@ -54,7 +54,8 @@ const sidebars = {
       items: [
         'hackfun/openwrt/installation',
         'hackfun/openwrt/turboacc',
-        'hackfun/openwrt/thirdparty'
+        'hackfun/openwrt/thirdparty',
+        'hackfun/openwrt/ban-ipv6'
       ],
       collapsed: false
     },
