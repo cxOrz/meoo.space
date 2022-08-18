@@ -13,16 +13,24 @@
   --ifm-color-primary-light: #1eb7b8;
   --ifm-color-primary-lighter: #1fbfc0;
   --ifm-color-primary-lightest: #23d8d9;
+  --ifm-footer-background-color: #2b3137;
   --ifm-code-font-size: 95%;
   --ifm-line-height-base: 1.5;
   --ifm-font-family-monospace: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
-  --ifm-container-width-xl: 1520px;
   --docusaurus-highlighted-code-line-bg: rgb(235, 235, 235);
 }
 
 [data-theme='dark'] {
+  --ifm-color-primary: #21c0c0;
+  --ifm-color-primary-dark: #1eadad;
+  --ifm-color-primary-darker: #1ca3a3;
+  --ifm-color-primary-darkest: #178686;
+  --ifm-color-primary-light: #24d3d3;
+  --ifm-color-primary-lighter: #29dada;
+  --ifm-color-primary-lightest: #45dfdf;
+  --ifm-footer-background-color: #2b3137;
   /* Color which works with dark mode syntax highlighting theme */
-  --docusaurus-highlighted-code-line-bg: rgb(49, 43, 58);
+  --docusaurus-highlighted-code-line-bg: rgb(44, 44, 44);
 }
 
 .docusaurus-highlight-code-line {
@@ -69,10 +77,6 @@ html[data-theme='dark'] .docusaurus-highlight-code-line {
 }
 
 /* 暗黑模式显示的图标 */
-html[data-theme='dark'] .header-github-link:before {
-  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 24 24' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='white' d='M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12'/%3E%3C/svg%3E") no-repeat;
-}
-
 html[data-theme='dark'] .header-steam-link:before {
   background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='white' d='M24 12c0 6.627-5.373 12-12 12-5.782 0-10.608-4.091-11.744-9.537l4.764 2.003c.285 1.441 1.56 2.547 3.115 2.534 1.723-.017 3.105-1.414 3.116-3.129l.007-.003 3.602-2.684c2.304.024 4.14-1.833 4.14-4.091 0-2.26-1.834-4.093-4.093-4.093-2.234 0-4.048 1.791-4.09 4.015l-2.64 3.693c-.668-.014-1.269.169-1.791.51l-6.294-2.646c.708-5.953 5.765-10.572 11.908-10.572 6.627 0 12 5.373 12 12zm-16.577 5.477l-1.544-.649c.38.858 1.236 1.461 2.249 1.457 1.346-.012 2.422-1.11 2.41-2.455-.012-1.329-1.104-2.41-2.432-2.41-.287.001-.57.05-.86.16l1.542.648c.898.378 1.319 1.411.941 2.308-.376.896-1.409 1.318-2.306.941zm7.484-5.602c-1.533 0-2.781-1.249-2.781-2.782 0-1.534 1.248-2.782 2.781-2.782 1.534 0 2.781 1.248 2.781 2.782 0 1.533-1.247 2.782-2.781 2.782zm0-.682c1.159 0 2.1-.942 2.1-2.101 0-1.158-.94-2.102-2.1-2.102s-2.102.943-2.102 2.102c.001 1.159.943 2.101 2.102 2.101z'/%3E%3C/svg%3E") no-repeat;
 }
@@ -85,6 +89,10 @@ html[data-theme='dark'] article header h1,
 html[data-theme='dark'] article .markdown h2,
 html[data-theme='dark'] article .markdown h3 {
   color: #f1f1f1;
+}
+
+.footer--dark {
+  background-color: #2b3137;
 }
 
 /* 重写博客标题样式 */
