@@ -20,7 +20,7 @@ Git Rebase 自己压根没用过，正巧公司团队要用到，学习总结一
               /
 C1 <- C2 <- C3 <- C6
 ```
-
+<!-- truncate -->
 #### Merge
 C7：自动生成的新提交，由 C5 和 C6 合并 (Merge branch xxx of xxx)。提交树不是线性，会按提交时间顺序显示记录。
 ```
