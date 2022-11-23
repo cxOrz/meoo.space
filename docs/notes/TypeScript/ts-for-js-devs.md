@@ -1,6 +1,7 @@
 ---
 title: 从 JavaScript 到 TypeScript
 slug: js-to-ts
+sidebar_position: 1
 ---
 
 :::info

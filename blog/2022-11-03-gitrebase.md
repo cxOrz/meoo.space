@@ -111,4 +111,16 @@ git add .
 git rebase --continue
 ```
 
+四、切换到主分支，合并变过基的 hotfix 分支
+```bash
+git checkout main
+git merge hotfix
+```
+到这里，就完成了所有的操作，但是这些变化都是本地的，如果需要更新到远程仓库，要推送一下。
+
+五、推送主分支到远程仓库
+```bash
+git push
+```
+
 通过 rebase 来合并分支，hotfix 上的提交就被续在了 main 分支之后，得到一条线性提交树。
