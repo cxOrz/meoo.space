@@ -1,6 +1,6 @@
 ---
 title: 单例模式 (Singleton Pattern)
-slug: declare
+slug: singleton
 sidebar_position: 1
 ---
 
