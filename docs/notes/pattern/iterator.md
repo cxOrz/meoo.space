@@ -86,3 +86,10 @@ while ((curr = iterator.next())) {
   console.log(curr);
 }
 ```
+
+输出：
+```
+Lee
+Tom
+Bella
+```
