@@ -68,9 +68,9 @@ slug: /v2ray-in-campus
 }
 ```
 
-解压目录里面的可执行程序 `v2ctl` 可以用来生成客户端 id，执行以下命令会生成一个 uuid，可以用来填入上面配置文件。
+在目录下可以用命令来随机生成客户端 uuid，可以用来填入上面配置文件。
 ```bash
-./v2ctl.exe uuid
+./v2ray.exe uuid
 ```
 
 ## 客户端配置
@@ -104,6 +104,6 @@ rules: null
 运行 V2rayN ，直接选择添加VMESS服务器，按照前面的服务器配置内容手动进行填写即可。
 
 ## 使用
-服务端运行 `v2ray` 程序，客户端可以用 ClashForAndroid / ClashForWindows 或者 V2rayN / V2rayNg。剩下的就是客户端的使用方法了，与文章主题无关，不再细说。
+服务端在刚刚的解压目录下执行 `./v2ray.exe run` 命令来运行 V2Ray，然后客户端就可以用 ClashForAndroid / ClashForWindows 或者 V2rayN / V2rayNg。剩下的就是客户端的使用方法了，与文章主题无关，不再细说。
 
 CFW 建议使用 TUN 模式，CFA 直接用全局代理模式即可。
