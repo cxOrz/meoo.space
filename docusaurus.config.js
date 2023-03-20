@@ -89,12 +89,6 @@ const config = {
             className: 'header-steam-link',
             'aria-label': 'Steam',
           },
-          {
-            href: 'https://space.bilibili.com/18844857',
-            position: 'right',
-            className: 'header-bilibili-link',
-            'aria-label': 'Bilibili',
-          }
         ],
       },
       footer: {
