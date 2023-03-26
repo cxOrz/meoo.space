@@ -1,5 +1,5 @@
 ---
-title: 蓝牙耳机
+title: 关于蓝牙的问题
 slug: /bluetooth
 ---
 

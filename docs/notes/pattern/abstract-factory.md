@@ -4,8 +4,6 @@ slug: abstract-factory
 sidebar_position: 3
 ---
 
-## 概念
-
 抽象工厂模式是一种创建型设计模式，它能创建一系列相关的对象，而无需指定其具体类。
 
 优点：

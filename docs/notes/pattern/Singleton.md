@@ -4,7 +4,6 @@ slug: singleton
 sidebar_position: 1
 ---
 
-## 概念
 
 单例模式提供方法，返回相同的缓存实例对象。
 
