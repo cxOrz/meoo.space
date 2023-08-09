@@ -5,6 +5,9 @@ title: 工具网站列表
 slug: /resources-webtool
 ---
 
+## [SYMBL](https://symbl.cc/)
+表情符号和符号大全，支持查询、一键复制Unicode编码。
+
 ## [Quick Reference](https://quickref.me/)
 提供了极其丰富的各类语言、工具的速查以及示例。
 

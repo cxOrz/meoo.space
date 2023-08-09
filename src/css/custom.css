@@ -93,6 +93,11 @@ article .markdown h3 {
   font-size: 1rem !important;
 }
 
+a:hover,
+a {
+  text-underline-position: under;
+}
+
 .hero {
   display: flex;
   flex-wrap: wrap;
