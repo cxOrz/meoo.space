@@ -98,6 +98,48 @@ HiddenClasses 的基本假设是，具有相同结构的对象（例如，具有
 - 慢属性保存在自身的属性字典里，元信息不再通过 HiddenClass 共享。
 - 慢属性可以高效地删除和添加属性，但访问速度比其他两种类型慢。
 
+## 元素还是数组索引属性
+
+到目前为止，我们已经了解了命名属性，忽略了数组中常用的整数索引属性。处理整数索引属性的复杂程度并不亚于命名属性。尽管所有索引属性总是单独保存在元素存储区中，但是有 20 种不同类型的元素！
+
+满的（Packed）或有空隙的（Holey）元素：V8 做出的第一个区别是，元素的存储是包装的还是有空隙的。如果删除了一个索引元素，或者没有定义索引元素，就会在存储中出现空隙。一个简单的例子是 `[1,,3]`，其中第二个元素就是一个空隙。下面的示例说明了这个问题：
+
+```js
+const o = ['a', 'b', 'c'];
+console.log(o[1]);          // Prints 'b'.
+
+delete o[1];                // Introduces a hole in the elements store.
+console.log(o[1]);          // Prints 'undefined'; property 1 does not exist.
+o.__proto__ = {1: 'B'};     // Define property 1 on the prototype.
+
+console.log(o[0]);          // Prints 'a'.
+console.log(o[1]);          // Prints 'B'.
+console.log(o[2]);          // Prints 'c'.
+console.log(o[3]);          // Prints undefined
+```
+
+![](../static/img/essay/fast-v8-hole.png)
+
+简而言之，如果对象上不存在某个属性，就必须继续在原型链上寻找。由于元素是自包含的，我们不会在 HiddenClass 上存储关于当前索引属性的信息，因此我们需要一个名为 `the_hole` 的特殊值来标记不存在的属性，这对数组函数的性能至关重要。如果我们知道没有空隙，即元素存储区是满的，我们就可以执行本地操作，而无需在原型链上进行昂贵的查找。
+
+快或字典元素：元素的第二个主要区别是它们是快模式还是字典模式。快元素就是简单的虚拟机内部数组，其属性索引映射到元素存储区的索引。然而，这种简单的表示法对于只有很少条目被占用的大型稀疏/空隙型数组来说是相当浪费的。在这种情况下，我们使用基于字典的表示法来节省内存，但代价是访问速度稍慢：
+
+```js
+const sparseArray = [];
+sparseArray[9999] = 'foo'; // Creates an array with dictionary elements.
+```
+
+在本示例中，分配一个长度为 10000 的数组将非常浪费。相反，V8 会创建一个字典，用于存储 **键-值-描述符** 三元组。本例中的键将会是 `"9999"`，值是 `"foo"`，使用的是默认描述符。由于我们没有办法在 HiddenClass 上存储描述符详细信息，因此使用自定义描述符定义索引属性时，V8 都会采用慢元素：
+
+```js
+const array = [];
+Object.defineProperty(array, 0, {value: 'fixed' configurable: false});
+console.log(array[0]);      // Prints 'fixed'.
+array[0] = 'other value';   // Cannot override index 0.
+console.log(array[0]);      // Still prints 'fixed'.
+```
+
+在本例中，我们在数组上添加了一个不可配置的属性，该信息存储在慢元素字典三元组的描述符部分。需要注意的是，数组函数在慢元素对象上运行时速度会大大降低。
 
 ## 参考
 - [Fast properties in V8](https://v8.dev/blog/fast-properties)
