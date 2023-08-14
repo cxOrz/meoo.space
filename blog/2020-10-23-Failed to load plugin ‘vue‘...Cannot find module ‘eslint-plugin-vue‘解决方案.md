@@ -39,7 +39,7 @@ Consider running eslint --debug C:\Users\MCX\Documents\Vue\vueproj\src\component
  3. 如果ESLint安装在本地，检查本地的'eslint-plugin-vue'是否正确安装，不放心也可以再执行`npm install eslint-plugin-vue`，如果没有创建eslintrc配置文件就在控制台运行`.\node_modules\.bin\eslint --init`(具体路径按照自己的来)。
  4. 如果确保以上步骤都正确执行了，没有问题，就去Setting(JSON)里，查看是否添加eslint对vue文件检查？是否设置了eslint的工作文件夹？
 
-  ![在这里插入图片描述](https://img-blog.csdnimg.cn/20201023181356723.png#pic_center)
+  ![在这里插入图片描述](../static/img/essay/20201023181356723.png)
 
   工作文件夹的设置可以按照图中的自动模式，这样eslint会自动根据package.json等文件来判断工作文件夹。也可以自己输入文件夹，来设定，比如设定当前项目文件夹vueproj为工作文件夹：`"eslint.workingDirectories": ["vueproj"]`。
 

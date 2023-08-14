@@ -6,8 +6,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/vsDark');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: '喵屋',
-  tagline: '每天进步一点点',
+  title: 'Hanasaki的老窝',
+  tagline: '挣扎的咸鱼罢了',
   url: 'https://meoo.space',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -28,8 +28,8 @@ const config = {
         },
         blog: {
           blogTitle: '博客',
-          blogSidebarTitle: '全部博文',
-          blogSidebarCount: 'ALL',
+          blogSidebarTitle: '近期博文',
+          blogSidebarCount: 5,
           showReadingTime: true,
           editUrl:
             'https://github.com/cxOrz/meoo.space/tree/main/',
@@ -45,11 +45,13 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
+      metadata: [
+        { name: 'keywords', content: 'blog, react, node, web, javascript, typescript' }
+      ],
       colorMode: {
         respectPrefersColorScheme: true
       },
       navbar: {
-        title: 'Meoo',
         logo: {
           alt: 'Logo',
           src: 'img/logo.webp',

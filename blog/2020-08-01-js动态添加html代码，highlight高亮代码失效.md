@@ -14,5 +14,3 @@ hljs.highlightBlock(document.getElementById("codes"));
 ```
 
 顾名思义，highlightBlock就是高亮某个块，所以直接用来高亮包含代码的那个块就可以了，双引号里的codes是在html文档中需要高亮的代码的标签id。
-![在这里插入图片描述](https://img-blog.csdnimg.cn/202008012104075.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3UwMTQ0MTgyNjc=,size_16,color_FFFFFF,t_70)
-

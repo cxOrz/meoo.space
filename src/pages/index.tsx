@@ -14,7 +14,7 @@ function HomepageHeader() {
         <h1 className={styles.hero_title}>
           <span
             style={{ color: 'var(--ifm-color-primary)' }}
-          >Hi</span> ~ 被你找到了！</h1>
+          >Hi</span> ~ 被你找到了</h1>
         <p className="hero__subtitle">记录学习、留住生活，尝试坚持写一点东西，让每天过的慢一点。</p>
       </div>
       <div className={styles.welcome_svg}>
@@ -26,11 +26,7 @@ function HomepageHeader() {
 
 export default function Home() {
   return (
-    <Layout
-      description="记录学习、留住生活，尝试坚持写一点东西，让每天过的慢一点。">
-        <Head>
-          <title>喵屋 - 欢迎来到小屋</title>
-        </Head>
+    <Layout>
       <HomepageHeader />
       <main>
         <br />

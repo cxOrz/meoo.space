@@ -8,7 +8,7 @@ tags: [Vue, 笔记, 大二]
 我们要用到gsap的ScrollToPlugin插件实现滚动的动画效果,样式用Tailwind写了一部分、手撸了一部分。
 
 **效果如图**
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20201201211740259.gif#pic_center)
+![在这里插入图片描述](../static/img/essay/20201201211740259.gif)
 
 <!--truncate-->
 
@@ -135,7 +135,7 @@ span {
 ## 轮播滚动逻辑详解
 >即函数scrollright和scrollleft
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20201201204841223.png)
+![在这里插入图片描述](../static/img/essay/20201201204841223.png)
 
 图中“显示区域”在代码中为一个 ref 对象 `carousel` 。carousel.value`即为它对应的DOM节点。
 
@@ -160,7 +160,7 @@ span {
 
 **当右边深色部分<=显示区域宽度时**
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20201201214838896.png)
+![在这里插入图片描述](../static/img/essay/20201201214838896.png)
 
 向右滚动距离应为`carousel.value.scrollWidth - carousel.value.offsetWidth`，即右边深色部分的宽度。
 使用`gsap.to`进行滚动
@@ -178,7 +178,7 @@ span {
 
 **当左边深色部分<=显示区域宽度时**
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20201201214954847.png)
+![在这里插入图片描述](../static/img/essay/20201201214954847.png)
 
 直接滚动到0处，
 `gsap.to(carousel.value, { duration: 0.7, scrollTo: { x: 0 }, ease: 'power2.inOut' })`

@@ -92,5 +92,3 @@ la.insert('E', 'D')
 la.reverse() // 反转
 la.display() // 输出 E D C B A
 ```
-## 反转过程如图
-![在这里插入图片描述](https://img-blog.csdnimg.cn/6e6bc84b12b74b42a19fe2a20562da32.jpg?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAI1VuZGVmaW5lZA==,size_20,color_FFFFFF,t_70,g_se,x_16#pic_center)
