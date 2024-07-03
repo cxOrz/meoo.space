@@ -87,7 +87,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `版权所有 © 2023 cxOrz，此网站使用 Docusaurus 构建。`,
+      copyright: `版权所有 © 2024 cxOrz，此网站使用 Docusaurus 构建。`,
     },
     prism: {
       theme: prismThemes.github,
