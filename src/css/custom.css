@@ -1,0 +1,110 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #1ba6a7;
+  --ifm-color-primary-dark: #189596;
+  --ifm-color-primary-darker: #178d8e;
+  --ifm-color-primary-darkest: #137475;
+  --ifm-color-primary-light: #1eb7b8;
+  --ifm-color-primary-lighter: #1fbfc0;
+  --ifm-color-primary-lightest: #23d8d9;
+  --ifm-footer-background-color: #2b3137;
+  --ifm-code-font-size: 95%;
+  --ifm-line-height-base: 1.5;
+  --ifm-font-family-base: -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
+  --ifm-font-family-monospace: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+  --docusaurus-highlighted-code-line-bg: rgb(235, 235, 235);
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #21c0c0;
+  --ifm-color-primary-dark: #1eadad;
+  --ifm-color-primary-darker: #1ca3a3;
+  --ifm-color-primary-darkest: #178686;
+  --ifm-color-primary-light: #24d3d3;
+  --ifm-color-primary-lighter: #29dada;
+  --ifm-color-primary-lightest: #45dfdf;
+  --ifm-footer-background-color: #2b3137;
+  /* Color which works with dark mode syntax highlighting theme */
+  --docusaurus-highlighted-code-line-bg: rgb(44, 44, 44);
+}
+
+.docusaurus-highlight-code-line {
+  background-color: rgba(0, 0, 0, 0.1);
+  display: block;
+  margin: 0 calc(-1 * var(--ifm-pre-padding));
+  padding: 0 var(--ifm-pre-padding);
+}
+
+html[data-theme='dark'] .docusaurus-highlight-code-line {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+/* 导航栏右侧三个超链接 */
+.header-steam-link:hover {
+  opacity: 0.6;
+}
+
+.header-steam-link:before {
+  content: '';
+  width: 24px;
+  height: 24px;
+  display: flex;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M24 12c0 6.627-5.373 12-12 12-5.782 0-10.608-4.091-11.744-9.537l4.764 2.003c.285 1.441 1.56 2.547 3.115 2.534 1.723-.017 3.105-1.414 3.116-3.129l.007-.003 3.602-2.684c2.304.024 4.14-1.833 4.14-4.091 0-2.26-1.834-4.093-4.093-4.093-2.234 0-4.048 1.791-4.09 4.015l-2.64 3.693c-.668-.014-1.269.169-1.791.51l-6.294-2.646c.708-5.953 5.765-10.572 11.908-10.572 6.627 0 12 5.373 12 12zm-16.577 5.477l-1.544-.649c.38.858 1.236 1.461 2.249 1.457 1.346-.012 2.422-1.11 2.41-2.455-.012-1.329-1.104-2.41-2.432-2.41-.287.001-.57.05-.86.16l1.542.648c.898.378 1.319 1.411.941 2.308-.376.896-1.409 1.318-2.306.941zm7.484-5.602c-1.533 0-2.781-1.249-2.781-2.782 0-1.534 1.248-2.782 2.781-2.782 1.534 0 2.781 1.248 2.781 2.782 0 1.533-1.247 2.782-2.781 2.782zm0-.682c1.159 0 2.1-.942 2.1-2.101 0-1.158-.94-2.102-2.1-2.102s-2.102.943-2.102 2.102c.001 1.159.943 2.101 2.102 2.101z'/%3E%3C/svg%3E") no-repeat;
+}
+
+/* 暗黑模式显示的图标 */
+html[data-theme='dark'] .header-steam-link:before {
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='white' d='M24 12c0 6.627-5.373 12-12 12-5.782 0-10.608-4.091-11.744-9.537l4.764 2.003c.285 1.441 1.56 2.547 3.115 2.534 1.723-.017 3.105-1.414 3.116-3.129l.007-.003 3.602-2.684c2.304.024 4.14-1.833 4.14-4.091 0-2.26-1.834-4.093-4.093-4.093-2.234 0-4.048 1.791-4.09 4.015l-2.64 3.693c-.668-.014-1.269.169-1.791.51l-6.294-2.646c.708-5.953 5.765-10.572 11.908-10.572 6.627 0 12 5.373 12 12zm-16.577 5.477l-1.544-.649c.38.858 1.236 1.461 2.249 1.457 1.346-.012 2.422-1.11 2.41-2.455-.012-1.329-1.104-2.41-2.432-2.41-.287.001-.57.05-.86.16l1.542.648c.898.378 1.319 1.411.941 2.308-.376.896-1.409 1.318-2.306.941zm7.484-5.602c-1.533 0-2.781-1.249-2.781-2.782 0-1.534 1.248-2.782 2.781-2.782 1.534 0 2.781 1.248 2.781 2.782 0 1.533-1.247 2.782-2.781 2.782zm0-.682c1.159 0 2.1-.942 2.1-2.101 0-1.158-.94-2.102-2.1-2.102s-2.102.943-2.102 2.102c.001 1.159.943 2.101 2.102 2.101z'/%3E%3C/svg%3E") no-repeat;
+}
+
+html[data-theme='dark'] article header h1,
+html[data-theme='dark'] article .markdown h2,
+html[data-theme='dark'] article .markdown h3 {
+  color: #f1f1f1;
+}
+
+.footer--dark {
+  background-color: #2b3137;
+}
+
+/* 重写博客标题样式 */
+article header h2 {
+  font-size: 2rem !important;
+}
+
+article header h1 {
+  color: #0a2218;
+  font-size: 2rem !important;
+}
+
+article .markdown h2 {
+  color: #0a2218;
+  margin: 30px 0 20px 0;
+  font-size: 1.5rem !important;
+}
+
+article .markdown h3 {
+  color: #0a2218;
+  font-size: 1rem !important;
+}
+
+a:hover,
+a {
+  text-underline-position: under;
+}
+
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  justify-content: center;
+  align-content: space-around;
+  min-height: 90vh;
+  background-color: var(--ifm-background-color);
+}

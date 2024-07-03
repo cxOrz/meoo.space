@@ -1,0 +1,126 @@
+---
+slug: filter-json
+title: JS 递归过滤 JSON 数据
+authors: cxOrz
+tags: [js, tech]
+---
+
+负责人布置了个任务，写一个过滤 JSON 数据的方法，处理一下模型数据。递归绕的我真晕，脑子内存还是不太够。
+
+## 样例数据
+规则：bosclass 值为 boqs 的是树节点，bosclass 值为 wps 的是纯数据。如果树节点的 children 是空数组，那么把树节点移除掉。树的层级是无法预估的，可能有很多层。以下是过滤后的数据：
+```json
+[
+  {
+    "bosclass": "boqs",
+    "children": [
+      {
+        "bosclass": "boqs",
+        "children": [
+          {
+            "bosclass": "wps",
+            "guid": "fa01a4a1f1d448a3bfb315dac41e1914"
+          },
+          {
+            "bosclass": "wps",
+            "guid": "cbf47dc52b2243c1a9d46bb046d8a13d"
+          }
+        ],
+        "guid": "f785b4a061714dfe8fea367d12ddd29c"
+      }
+    ],
+    "guid": "8bc6c9026bb9472f8a3e23b382f87ac1"
+  }
+]
+```
+
+如何过滤呢？首先想到的方法是递归！
+<!-- truncate -->
+## 实现递归处理函数
+1. 对传入函数的 arr 数组进行过滤，留下 <u>children 不为空的 boqs 对象</u> 和 <u>wps 对象</u>。
+2. 对过滤得到的数组 tempArr 进行遍历，找到 boqs 项，只有它有 children 数组，对 children 数组进行递归处理。得到的返回值，赋给此 children。
+3. 递归函数返回处理好的数组。
+
+:::tip
+递归说不清楚，也不好理解。递归问题在这里就是自己调用自己，递归过程中，用了到自己的返回值。
+:::
+```javascript
+function removeChildren(arr) {
+  let tempArr = arr.filter(item => {
+    if (item.bosclass === 'boqs') {
+      return item.children.length !== 0;
+    }
+    return true;
+  });
+  for (let item of tempArr) {
+    if (item.bosclass === 'boqs') {
+      item.children = removeChildren(item.children);
+    }
+  }
+  return tempArr;
+}
+```
+
+## 问题尚未解决
+
+对原始数据处理之后，可能会遇到一种情况：一个 boqs 对象，它的 children 有两个 boqs 对象，恰好这两个对象的 children 也都是空。
+那么这样处理完后，这个上层的 boqs.children 里俩元素就都被删除了，他自己变成了空的。
+
+显然这样的处理结果，仍然是不符合规则的。
+
+既然这样，干脆 ~~多处理几次~~ 就好了，直到完全符合规则！
+
+```javascript
+// 写一个检查函数，递归检查数据对象，符合规则返回 true，否则返回 false
+function check(arr) {
+  let clean = true;
+  for (let obj of arr) {
+    if (obj.bosclass === 'boqs') {
+      if (obj.children.length === 0) {
+        clean = false;
+      } else {
+        clean = check(obj.children);
+      }
+    }
+  }
+  return clean;
+}
+
+// 不符合规则，就再处理，直到符合为止
+while (!check(jsonOBJ)) {
+  jsonOBJ = removeChildren(jsonOBJ);
+}
+```
+
+## 或许有更好的办法
+
+问题描述：处理完 bos.children ，可能它自己会变成空数组（元素全都不符合规则，全部删除）。
+
+解决这个问题，其实只需要再添加一个操作，判断处理后的 children 是否为空，是的话就删除该对象就好了。
+以下是修改后的函数，不再需要额外的递归检查，只此一个函数即可解决问题：
+
+```javascript
+function removeChildren(arr) {
+  let tempArr = arr.filter(item => {
+    if (item.children) {
+      return item.children.length !== 0;
+    }
+    return true;
+  });
+  for (let i = 0; i < tempArr.length; i++) {
+    if (tempArr[i].bosclass === 'boqs') {
+      tempArr[i].children = removeChildren(tempArr[i].children);
+      if (tempArr[i].children.length === 0) {
+        tempArr.splice(i, 1);
+        i--;
+      }
+    }
+  }
+  return tempArr;
+}
+```
+
+函数中的 `i--` 是为了把索引前移一个，因为当前元素不符合规则被删除了，所以现在 `i` 位置对应被删元素的后一个元素。
+而此次循环将要结束，马上就要 i++，这样的话就跳过了这个元素造成遗漏。
+
+现在应该是最优解法了。

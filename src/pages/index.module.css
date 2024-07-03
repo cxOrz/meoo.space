@@ -1,0 +1,40 @@
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+.welcome_intro {
+  width: 40vw;
+  padding: 3rem 5rem 0 0;
+}
+.welcome_intro p {
+  font-size: 1.5rem;
+}
+
+.welcome_svg img {
+  height: 40vw;
+  padding-top: 1rem;
+}
+
+.hero_title {
+  font-size: calc((100vw/150) + 36px);
+  text-align: left;
+}
+
+@media screen and (max-width: 996px) {
+  .hero_title {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+  .welcome_svg img {
+    width: 50vh;
+    height: 50vh;
+  }
+  .welcome_intro {
+    width: auto;
+    padding: 3rem 3rem 0;
+  }
+  .welcome_intro p {
+    font-size: 1.2rem;
+  }
+}

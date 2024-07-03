@@ -1,0 +1,52 @@
+tech:
+  label: 技术
+  permalink: /tech
+  description: 技术博客
+vue:
+  label: Vue
+  permalink: /vue
+  description: Vue我也不太会
+react:
+  label: React
+  permalink: /react
+  description: 工作中使用的就是React
+flutter:
+  label: Flutter
+  permalink: /flutter
+  description: Flutter还活着吗
+js:
+  label: JS
+  permalink: /js
+  description: Javascript
+nodejs:
+  label: NodeJS
+  permalink: /nodejs
+  description: Node.JS
+html:
+  label: HTML
+  permalink: /html
+  description: HTML
+life:
+  label: 生活
+  permalink: /life
+  description: 生活
+frontend:
+  label: 前端
+  permalink: /frontend
+  description: 前端
+openwrt:
+  label: OpenWRT
+  permalink: /openwrt
+  description: OpenWRT
+git:
+  label: Git
+  permalink: /git
+  description: Git
+linux:
+  label: Linux
+  permalink: /linux
+  description: Linux
+pattern:
+  label: 设计模式
+  permalink: /pattern
+  description: 设计模式
