@@ -84,11 +84,11 @@ const config: Config = {
           items: [
             {
               label: '归档',
-              to: '/archive',
+              to: '/blog/archive',
             },
             {
               label: '分类',
-              to: '/tags',
+              to: '/blog/tags',
             },
           ],
         },
