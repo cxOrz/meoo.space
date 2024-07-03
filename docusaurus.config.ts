@@ -24,7 +24,6 @@ const config: Config = {
       {
         docs: false,
         blog: {
-          routeBasePath: '/',
           blogTitle: '博客',
           blogSidebarTitle: '近期博文',
           blogSidebarCount: 10,
@@ -54,6 +53,22 @@ const config: Config = {
         style: { borderRadius: '50%' }
       },
       items: [
+        {
+          label: '博客',
+          to: '/blog',
+          position: 'left',
+          activeBaseRegex: '^/blog$'
+        },
+        {
+          label: '归档',
+          to: '/blog/archive',
+          position: 'left'
+        },
+        {
+          label: '分类',
+          to: '/blog/tags',
+          position: 'left'
+        },
         {
           href: 'https://github.com/cxOrz',
           position: 'right',
