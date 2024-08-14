@@ -39,6 +39,10 @@ const config: Config = {
     ],
   ],
 
+  markdown: {
+    format: 'detect',
+  },
+
   themeConfig: {
     metadata: [
       { name: 'keywords', content: 'blog, react, node, web, javascript, typescript' }
