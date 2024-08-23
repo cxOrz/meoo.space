@@ -15,8 +15,8 @@
   --ifm-color-primary-lightest: #23d8d9;
   --ifm-footer-background-color: #2b3137;
   --ifm-code-font-size: 95%;
-  --ifm-line-height-base: 1.65;
-  --ifm-font-family-base: -apple-system, BlinkMacSystemFont, PingFang SC, Microsoft YaHei, Source Han Sans SC, WenQuanYi Micro Hei, sans-serif;
+  --ifm-line-height-base: 1.75;
+  --ifm-font-family-base: -apple-system, BlinkMacSystemFont, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Source Han Sans SC, WenQuanYi Micro Hei, sans-serif;
   --ifm-font-family-monospace: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
   --docusaurus-highlighted-code-line-bg: rgb(235, 235, 235);
 }
