@@ -19,6 +19,7 @@
   --ifm-font-family-base: -apple-system, BlinkMacSystemFont, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Source Han Sans SC, WenQuanYi Micro Hei, sans-serif;
   --ifm-font-family-monospace: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
   --docusaurus-highlighted-code-line-bg: rgb(235, 235, 235);
+  --ifm-hr-height: 0.5px;
 }
 
 [data-theme='dark'] {
@@ -74,6 +75,11 @@ article .markdown h2 {
 article .markdown h3 {
   color: #0a2218;
   font-size: 1rem !important;
+}
+
+.markdown hr {
+  border: none;
+  background-color: var(--docusaurus-highlighted-code-line-bg);
 }
 
 a:hover,
