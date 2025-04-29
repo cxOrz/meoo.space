@@ -46,7 +46,7 @@ tags: [linux, tech]
 
 例如：机械硬盘空闲一分钟就停止转动、电池充到 80% 就停止充电、接入电源时 CPU 策略为性能模式。
 
-```bash
+```yaml
 # /etc/tlp.conf
 
 # 插电时，硬盘 2 空闲 60s 后停转
@@ -89,7 +89,7 @@ QT_IM_MODULE=fcitx
 
 使用 XWayland 渲染，体验最佳，硬件加速支持最好。参数如下：
 
-```bash
+```yaml
 --ozone-platform-hint=x11
 --enable-gpu-rasterization
 --enable-zero-copy
@@ -108,7 +108,7 @@ QT_IM_MODULE=fcitx
 
 `sddm-git` 开箱即用，但外接显示器时只在笔记本屏幕上显示了，因为我笔记本的 HDMI 口走的英伟达显卡。需要设置如下参数：
 
-```bash
+```yaml
 # /usr/share/sddm/scripts/Xsetup
 xrandr --setprovideroutputsource modesetting NVIDIA-0
 ```

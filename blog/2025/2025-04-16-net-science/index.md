@@ -54,7 +54,7 @@ tags: [linux,openwrt,tech]
 最近发现了一个冷门用法，能解决访问海外站点 IPv6 泄露的问题。在访问 Hyprland Wiki 的时候，总被它的 Cloudflare 拦截，怎么改分流都没用。下滑发现，它记录我访问的 IP 每次都是一样的 IPv6 地址，这还得了？怪不得怎么改都没用，IPv6 没经过代理，就直接通过它访问了。
 
 可以在 `/etc/dnsmasq.conf` 中设置规则：
-```bash
+```yaml
 # 把 hyprland 域名的 IPv6 地址强制解析为空
 address=/hyprland.org/::
 address=/wiki.hyprland.org/::
