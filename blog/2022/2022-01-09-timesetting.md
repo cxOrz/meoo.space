@@ -1,6 +1,7 @@
 ---
 title: 与 Windows 系统时间不同步
 slug: manjaro-time-adjust
+authors: cxOrz
 tags: [linux]
 ---
 

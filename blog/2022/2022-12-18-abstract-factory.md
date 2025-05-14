@@ -1,6 +1,7 @@
 ---
 title: 抽象工厂模式 (Abstract Factory)
 slug: abstract-factory
+authors: cxOrz
 tags: [pattern, js]
 ---
 

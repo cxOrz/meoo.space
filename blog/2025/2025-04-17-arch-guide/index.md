@@ -1,6 +1,8 @@
 ---
 slug: arch-hyprland-note
 title: Hyprland + Arch 备忘录
+description: 涵盖了 Intel + Nvidia 双显卡环境下的 Hyprland 设置、ZSH 环境变量（.zshrc, .zprofile, .zshenv）详解、TLP 电源管理优化、Fcitx5 + Rime 中文输入法配置、Chrome 浏览器在 Wayland/XWayland 的配置以及 GTK 主题设置。
+keywords: [archlinux, hyprland, dotfiles, 硬件加速]
 authors: cxOrz
 tags: [linux, tech]
 ---

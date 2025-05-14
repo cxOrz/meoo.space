@@ -1,6 +1,9 @@
 ---
-title: 笔记本风扇速度管理
+title: Linux 风扇转速管理
 slug: fan-speed-control
+description: 使用 nbfc-linux 工具为 Acer Nitro AN515-54 等型号笔记本配置风扇控制策略，告别风扇噪音、风扇不转的问题，提升 Linux 使用体验。
+keywords: [linux, fancontrol, acer, nbfc]
+authors: cxOrz
 tags: [linux]
 ---
 

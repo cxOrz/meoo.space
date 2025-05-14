@@ -1,6 +1,7 @@
 ---
 title: 装饰模式 (Decorator)
 slug: decorator
+authors: cxOrz
 tags: [pattern, js]
 ---
 

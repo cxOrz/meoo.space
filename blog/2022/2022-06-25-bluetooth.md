@@ -1,6 +1,7 @@
 ---
 title: 关于蓝牙的问题
 slug: bluetooth
+authors: cxOrz
 tags: [linux]
 ---
 

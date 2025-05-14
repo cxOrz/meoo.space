@@ -1,6 +1,9 @@
 ---
 title: Openwrt 第三方软件源与 opkg 的使用
 slug: openwrt-thirdparty
+description: 在 OpenWrt 上配置第三方软件源，使用 opkg 命令管理软件包。本文涵盖了 opkg 的更新、安装、卸载等基本操作，以及修改默认软件源、添加自定义软件源、关闭签名检查的方法。
+keywords: [openwrt, 自定义, 第三方, 软件源, opkg]
+authors: cxOrz
 tags: [openwrt]
 ---
 

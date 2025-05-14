@@ -1,6 +1,7 @@
 ---
 title: 单例模式 (Singleton Pattern)
 slug: singleton
+authors: cxOrz
 tags: [js, pattern]
 ---
 

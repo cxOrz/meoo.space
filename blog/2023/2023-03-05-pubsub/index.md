@@ -1,6 +1,7 @@
 ---
 title: 发布订阅模式 (PubSub)
 slug: pubsub
+authors: cxOrz
 tags: [pattern, js]
 ---
 

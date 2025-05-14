@@ -1,6 +1,8 @@
 ---
 slug: git-basic-usage
 title: Git 基础使用
+description: 本文详细介绍Git常用命令，包括克隆、提交、撤销、远程仓库管理、分支操作与标签使用。
+keywords: [git, 基础]
 authors: cxOrz
 tags: [git, tech]
 ---

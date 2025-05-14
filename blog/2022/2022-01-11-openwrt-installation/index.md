@@ -1,6 +1,7 @@
 ---
 title: R4A Gigabit 刷入 Openwrt
 slug: openwrt-installation
+authors: cxOrz
 tags: [tech, openwrt]
 ---
 

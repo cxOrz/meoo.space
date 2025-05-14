@@ -1,6 +1,7 @@
 ---
 title: 组合模式 (Composite)
 slug: composite
+authors: cxOrz
 tags: [pattern, js]
 ---
 

@@ -1,6 +1,8 @@
 ---
 slug: grub-manually-add-windows-menuentry
 title: Grub 添加 Windows 启动项
+description: 手动编辑 GRUB 配置文件，通过在 custom.cfg 中添加 menuentry 来直接加入 Windows 11 的启动选项。
+keywords: [grub, archlinux]
 authors: cxOrz
 tags: [linux]
 ---

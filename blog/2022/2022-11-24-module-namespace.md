@@ -1,6 +1,7 @@
 ---
 title: TS 中 module 和 namespace
 slug: ts-module-namespace
+authors: cxOrz
 tags: [js]
 ---
 

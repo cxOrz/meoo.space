@@ -45,7 +45,7 @@ const config: Config = {
 
   themeConfig: {
     metadata: [
-      { name: 'keywords', content: 'blog, react, node, web, javascript, typescript' }
+      { name: 'keywords', content: 'blog, web, linux' }
     ],
     colorMode: {
       respectPrefersColorScheme: true

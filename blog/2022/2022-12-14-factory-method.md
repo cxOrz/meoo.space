@@ -1,6 +1,7 @@
 ---
 title: 工厂方法模式 (Factory Method)
 slug: factory-method
+authors: cxOrz
 tags: [pattern, js]
 ---
 

@@ -1,6 +1,8 @@
 ---
 slug: net-science
 title: 近一年用的 Redmi AX6000 路由器
+description: 回顾 Redmi AX6000 路由器一年使用体验。本文记录了刷入 ImmortalWrt 固件、配置 Passwall 进行流量分流与 DNS 配置，探讨了 AdGuard Home 的用途，并分享了利用 dnsmasq 解决特定站点 IPv6 泄露的技巧。为 OpenWrt 软路由配置提供参考。
+keywords: [redmi, openwrt, 软路由, passwall, AdGuard, dns]
 authors: cxOrz
 tags: [linux,openwrt,tech]
 ---
@@ -43,9 +45,13 @@ tags: [linux,openwrt,tech]
 
 ## AdGuard Home
 
-前期用过这个插件，可以拦截页面广告、视频广告、隐私收集请求等。但是后来觉得把这个拦截放在路由器有些浪费资源，电脑、手机性能高的很，直接在客户端装插件拦截更高效。
+可以拦截页面广告、视频广告、隐私收集等的 DNS 解析。但我觉得把这个拦截放在路由器有些浪费资源，电脑、手机性能更好，直接在客户端装插件拦截更高效。
 
-还是让路由器把性能发挥在更需要的地方，比较好。
+唯一有必要使用的场景：设备无法直接使用广告拦截插件。例如在 Google TV 上用 Youtube 看视频，因为不是在浏览器所以也无法使用 uBlock，频繁插播广告会比较烦人。
+
+于是，在 R2S 刷了个 iStoreOS 并且配置为旁路由（关闭了 DHCP）。装上 AdGuard Home 并把端口直接设为 53，直接让 AdGuard Home 接管 DNS 解析（dnsmasq 改为 6053 避免冲突）。
+
+在 Google TV 把 DNS 服务器设为旁路由的 IP，实现电视上的广告拦截。
 
 ## dnsmasq
 

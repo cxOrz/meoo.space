@@ -1,6 +1,9 @@
 ---
 title: 通过 v2ray 优雅使用校园网
 slug: v2ray-in-campus
+description: 通过 V2ray 优雅解决校园网限制和不稳定问题，提供 V2ray 服务端配置及 Clash、V2rayN 客户端设置步骤，实现稳定高速的校园网络连接。
+keywords: [v2ray, clash, 校园网]
+authors: cxOrz
 tags: [tech]
 ---
 
@@ -8,7 +11,7 @@ tags: [tech]
 根据《中华人民共和国计算机信息网络国际联网管理暂行规定》，请勿将该技术用于违法搭建“机场”服务，建立非法信道进行国际联网。
 :::
 
-安卓12已经不支持 `L2TP/IPSec PSK` 的 VPN，用 [Softether绕过校园网限制](/blog/campus-netbypass) 已经不行了，安卓12的手机无法连接。同时，这种方法使用起来也不稳定，不登陆的情况下连上 Wifi 会多次被踢掉线，掉线就要重新连接WiFi、连接VPN，再加上Windows11的过渡动画是真迟钝，这简直是灾难。所以，这次用 V2ray 来优雅地改善体验。
+自从安卓 12 已经不支持 `L2TP/IPSec PSK` 的 VPN，用 [Softether绕过校园网限制](/blog/campus-netbypass) 已经不行了，安卓 12 的手机无法连接。同时，这种方法使用起来也不稳定，不登陆的情况下连上 Wifi 会多次被踢掉线，掉线就要重新连接WiFi、连接VPN，再加上Windows11的过渡动画是真迟钝，这简直是灾难。所以，这次用 V2ray 来优雅地改善体验。
 
 :::info 前提
 服务端能上网！早期不优雅的使用方法，见 [如何绕过校园网验证，在宿舍免费上办公区的网，享受不拥挤的网络](/blog/campus-netbypass)。

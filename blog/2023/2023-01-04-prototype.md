@@ -1,6 +1,7 @@
 ---
 title: 原型模式 (Prototype)
 slug: prototype
+authors: cxOrz
 tags: [pattern, js]
 ---
 
