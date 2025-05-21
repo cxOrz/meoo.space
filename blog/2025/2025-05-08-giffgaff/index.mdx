@@ -1,7 +1,7 @@
 ---
 slug: giffgaff-on-android
 title: GiffGaff 开启 WiFi Calling（安卓 / WLAN 通话）
-description: 本文记录如何在安卓手机上开启并稳定使用 WLAN 通话（WiFi Calling），避免高额漫游费。以及如何通过 OpenClash 等工具为 GiffGaff WLAN 通话定制分流规则，确保流量走英国节点，告别漫游，享受本地资费。
+description: 在安卓手机上开启并稳定使用 WLAN 通话（WiFi Calling），避免高额漫游费。通过 OpenClash 为 GiffGaff WLAN 通话定制分流规则，确保流量走英国节点，告别漫游，享受本地资费。
 keywords: [giffgaff, esim, clash, 分流]
 authors: cxOrz
 tags: [openwrt, tech]
@@ -75,6 +75,7 @@ tcpdump -i phy1-ap0 -n -w /tmp/wificalling.pcap "host 192.168.100.239"
 # OpenClash
 rules:
 - IP-CIDR,87.194.0.0/19,UK
+- IP-CIDR,87.194.88.0/23,UK
 - DOMAIN-SUFFIX,epdg.epc.mnc010.mcc234.pub.3gppnetwork.org,UK
 ```
 
