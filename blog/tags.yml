@@ -50,3 +50,7 @@ pattern:
   label: 设计模式
   permalink: /pattern
   description: 设计模式
+ai:
+  label: AI
+  permalink: /ai
+  description: AI
